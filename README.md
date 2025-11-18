@@ -11,7 +11,7 @@ Incluye conexión a **MySQL**, manejo de formularios, validaciones básicas y re
 3. Instalar dependencias:
    ```bash
    npm install express mysql dotenv
-4. Ejecutar el servidor: node app.js
+4. Ejecutar el servidor: npm start
 5. Abrir en el navegador: http://localhost:3000
 
 # Rutas Discponibles

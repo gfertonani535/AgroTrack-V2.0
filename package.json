@@ -1,23 +1,23 @@
 {
   "name": "agrotrackv2.0",
   "version": "1.0.0",
-  "description": "Giuliano Fertonani TP1 Programacion Web 2 Instrucciones para ejecutar: node server.js Puerto que utiliza: 8888",
-  "main": "server.js",
+  "description": "Giuliano Fertonani AO2 Programacion Web 2",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gfertonani535/AgroTrack.git"
+    "url": "git+https://github.com/gfertonani535/AgroTrack-V2.0.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gfertonani535/AgroTrack/issues"
+    "url": "https://github.com/gfertonani535/AgroTrack-V2.0/issues"
   },
-  "homepage": "https://github.com/gfertonani535/AgroTrack#readme",
+  "homepage": "https://github.com/gfertonani535/AgroTrack-V2.0#readme",
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
