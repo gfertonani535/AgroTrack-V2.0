@@ -1,0 +1,2 @@
+# AgroTrack-V2.0
+La empresa ficticia AgroTrack, utilizada en la Actividad Obligatoria 1, continúa desarrollando su portal interno. En la primera entrega, se implementó un servidor HTTP básico con Node.js utilizando únicamente módulos nativos. En esta segunda instancia, se solicita evolucionar el proyecto aplicando los conocimientos de las Unidades 4, 5 y 6 del programa, incorporando Express y una base de datos MySQL.
