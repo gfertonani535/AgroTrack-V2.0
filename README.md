@@ -8,6 +8,11 @@ Incluye conexión a **MySQL**, manejo de formularios, validaciones básicas y re
 
 1. Crear la base de datos ejecutando `sql/schema.sql` en MySQL(Yo lo hice utilizando XAMPP).
 2. Crear el archivo `.env` a partir de `.env.example` con tus credenciales.
+PORT=3000
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=
+DB_NAME=agrotrack
 3. Instalar dependencias:
    ```bash
    npm install express mysql dotenv
