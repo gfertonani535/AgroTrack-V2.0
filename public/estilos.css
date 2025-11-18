@@ -1,0 +1,88 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f8f5;
+  color: #333;
+}
+
+header {
+  background-color: #3b6e3b;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.activo {
+  text-decoration: underline;
+}
+
+main {
+  width: 80%;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+main a{
+  color: black;
+  text-decoration: none;
+}
+
+main a:hover{
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  background-color: #3b6e3b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2f5d31;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #3b6e3b;
+  color: white;
+  padding: 10px 0;
+  margin-top: 40px;
+}

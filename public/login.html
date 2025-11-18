@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - AgroTrack</title>
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Iniciar sesión</h1>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/productos.html">Productos</a>
+      <a href="/contacto.html">Contacto</a>
+      <a href="/login.html" class="activo">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Acceso de demostración</h2>
+    
+    <form id="form-login">
+        <label>Usuario:</label>
+        <input placeholder="admin" type="text" name="usuario" required>
+
+        <label>Contraseña:</label>
+        <input placeholder="1234" type="password" name="clave" required>
+
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <p id="msg"></p>
+
+    <script>
+        const form = document.getElementById("form-login");
+
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+
+            const user = form.usuario.value;
+            const pass = form.clave.value;
+
+            // Login ficticio
+            if (user === "admin" && pass === "1234") {
+                window.location.href = "/index.html";
+            } else {
+                document.getElementById("msg").innerText = "Credenciales incorrectas";
+            }
+        });
+    </script>
+  </main>
+
+  <footer>
+    <p>© 2025 AgroTrack</p>
+  </footer>
+</body>
+</html>

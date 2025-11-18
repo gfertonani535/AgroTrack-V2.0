@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - AgroTrack</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/productos.html">Productos</a>
+      <a href="/contacto.html" class="activo">Contacto</a>
+      <a href="/login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Envíanos tu consulta</h2>
+    <form id="form-contacto">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Mensaje:</label>
+        <textarea name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <a  href="listado.html">Ver consultas anteriores</a>
+    <p id="respuesta"></p>
+  </main>
+<script>
+
+        const form = document.getElementById("form-contacto");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const datos = {
+                nombre: form.nombre.value,
+                email: form.email.value,
+                mensaje: form.mensaje.value
+            };
+
+            const res = await fetch("/api/contactos", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(datos)
+            });
+
+            const json = await res.json();
+
+            document.getElementById("respuesta").innerText = json.mensaje;
+console.log(json);
+        });
+    </script>
+  <footer>
+    <p>© 2025 AgroTrack</p>
+  </footer>
+</body>
+</html>

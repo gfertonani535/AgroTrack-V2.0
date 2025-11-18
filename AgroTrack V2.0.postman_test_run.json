@@ -1,0 +1,88 @@
+{
+	"id": "f8a00775-d74a-4f24-8dce-ca7856e3fe20",
+	"name": "AgroTrack V2.0",
+	"timestamp": "2025-11-18T19:33:30.609Z",
+	"collection_id": "48421432-af555220-af2a-47f3-9d45-fab94546175d",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-11-18T19:33:30.138Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "04b7074d-75c6-42af-89b3-50f7101dcc46",
+			"name": "GET /health",
+			"url": "http://localhost:3000/health",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "93b91c55-7e90-47b9-8c72-64c3c24fd083",
+			"name": "GET /api/contactos",
+			"url": "http://localhost:3000/api/contactos",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a7a932fb-6a20-4c58-bbc8-c5defd626291",
+			"name": "POST /api/contactos",
+			"url": "http://localhost:3000/api/contactos",
+			"time": 8,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 22,
+	"collection": {
+		"requests": [
+			{
+				"id": "04b7074d-75c6-42af-89b3-50f7101dcc46",
+				"method": "GET"
+			},
+			{
+				"id": "93b91c55-7e90-47b9-8c72-64c3c24fd083",
+				"method": "GET"
+			},
+			{
+				"id": "a7a932fb-6a20-4c58-bbc8-c5defd626291",
+				"method": "POST"
+			}
+		]
+	}
+}

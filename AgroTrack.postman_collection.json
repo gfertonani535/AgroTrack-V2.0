@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "AgroTrack V2.0",
+    "_postman_id": "c0a1f7c1-e223-4f7e-bb4b-f89cc1e9bf00",
+    "description": "Colección de pruebas para la API AgroTrack V2.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["health"]
+        },
+        "description": "Verifica el estado del servidor AgroTrack"
+      }
+    },
+    {
+      "name": "GET /api/contactos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/contactos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "contactos"]
+        },
+        "description": "Devuelve la lista de contactos registrados"
+      }
+    },
+    {
+      "name": "POST /api/contactos",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nombre\": \"Juan Perez\",\n    \"email\": \"juan@mail.com\",\n    \"mensaje\": \"Consulta desde Postman\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/contactos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "contactos"]
+        },
+        "description": "Registra un nuevo contacto en la base de datos"
+      }
+    }
+  ]
+}
